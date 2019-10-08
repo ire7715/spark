@@ -416,7 +416,7 @@ class StructField(DataType):
         self.metadata = metadata or {}
 
     def simpleString(self):
-        return '%s:%s' % (self.name, self.dataType.simpleString())
+        return '`%s`:%s' % (self.name, self.dataType.simpleString())
 
     def __repr__(self):
         return "StructField(%s,%s,%s)" % (self.name, self.dataType,
